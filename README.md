@@ -13,7 +13,7 @@ The application connects to a **REST API** to retrieve and manipulate data store
 The application is structured into multiple layers:
 - **Controller**: Handles HTTP requests and responses.  
 - **Service**: Contains the business logic.  
-- **Repository**: Interfaces with the H2 database using **Spring Data JPA**.  
+- **Repository**: Uses a **proxy class** to communicate with the API and retrieve data.
 - **Model**: Represents the database entities.  
 
 ## Installation & Execution
